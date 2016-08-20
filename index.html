@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Front-end project with Bootstrap</title>
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	<!-- ______________________START TOP MENU I_____________________________ -->
+		<div id="topMenuI">
+			<div class="container">
+				<div id="topMenu1">
+					<div id="sloganForTopMenu1">
+						<h5>EASY BUY & LOOK WELL</h5>
+					</div>
+					<div class="TopMenu1LinksUnregistered">
+						<ul class="nav nav-tabs">
+							<li>
+							<form name="registrationForm">
+								<input type="text" name="userLogin" placeholder="Enter your login" class="userValidation">
+								<input type="password" name="userPassword" placeholder="Enter your password" class="userValidation">
+								<button class="userValidation" onclick="checkCookies()"><span class="glyphicon glyphicon-flag" style="color: red">LogIn</span></button>
+							</form>
+						</ul>
+					</div>
+					<div class="TopMenu1LinksRegistered" style="display: none">
+						<ul class="nav nav-tabs">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> My account</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> My wishlist</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-trash"></span> Basket</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-flag"></span> LogIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- ________________________END TOP MENU I_____________________________ -->
+	<!-- ______________________START TOP MENU II____________________________ -->
+		<div id="topMenuII">	
+			<div class="container"> 
+				<div id="topMenu2">
+					<div id="leftPartOfTopMenu2">
+						<div id="logoImage">
+							<img src="images/logo_image_resized.png" alt="logo">
+						</div>
+						<p>MEN WEAR SHOP</p>
+					</div>
+					<div id="centerPartOfTopMenu2">
+						<div class="top_carousele_button">
+							<a id="top_carousele_top" href="#" class="glyphicon glyphicon-menu-up"></a>
+						</div>
+						<p id="p1">fashion collection spring 2016</p>
+						<p id="p2" style="display:none">fashion collection summer 2016</p>
+						<p id="p3" style="display:none">fashion collection autumn 2016</p>
+						<p id="p4" style="display:none">fashion collection winter 2016</p>
+						<div class="top_carousele_button">
+							<a href="#" class="glyphicon glyphicon-menu-down"></a>
+						</div>
+					</div>
+
+					<div id="rightPartOfTopMemu2">
+						<div class="additionalItemsMenu2">
+						<p>dvgsmvhfv</p>
+						</div>
+						<div class="mainBasketItemMenu2">
+							<p> <span class="glyphicon glyphicon-shopping-cart" style="color:red; font-size:30px"> </span>
+						 	SHOPING CART (0 Items) - <span style="font-size:12px; color:lightgrey">$0.00</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- ________________________END TOP MENU II____________________________ -->
+	<!-- ______________________START TOP MENU III___________________________ -->
+		<div id="topMenuIII">
+			<div class="container">
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li><a href="#">HOME</a></li>
+				        <li><a href="#">SHOP</a></li>
+				        <li><a href="#">ABOUT US</a></li>
+				        <li><a href="#">TESTIMONIALS</a></li>
+				        <li><a href="#">CONTAKT US</a></li>
+				        <li><a href="#">LIFE MADE EASY!</a></li>
+				      </ul>
+				      <form class="navbar-form navbar-left">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				      </form>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+		</div>
+	<!-- ________________________END TOP MENU III___________________________ -->
+	<!-- _______________________START TOP JUMBOTRON_________________________ -->
+	<div class="jumbotronModule">
+		<div class="container">
+			<div class="jumbotronPicture">
+				<img src="images/coat.png">
+			</div>
+			<div class="jumbotronText">
+			  <p>BACK TO OFFICE MAN STYLE</p><br>
+			  <p>Some other style which describer this kind of collection.Some other style which describer this kind of collection.Some other style which describer this kind of collection.Some other style which describer this kind of collection.</p><br>
+			  <button>SHOW NOW</button>
+			</div>
+		</div>
+	</div>
+	<!-- _________________________END TOP JUMBOTRON_________________________ -->
+	<!-- ________________________START TOP MENU IV__________________________ -->
+	<div class="topMenuIV">
+		<div class="container">
+			<div id="topMenu4">
+				<div class="TopMenu1Links">
+					<ul class="nav nav-tabs">
+						<li role="presentation"><a href="#">FASHION COLLECTION 2015</a></li>
+						<li role="presentation"><a href="#">TOP SELLERS</a></li>
+						<li role="presentation"><a href="#">NEW TREND 2016</a></li>
+						<li role="presentation"><a href="#">HOT OF TODAY</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- _________________________END TOP MENU IV___________________________ -->
+	<!-- ____________________START CONTENT CONTAINER________________________ -->
+	<div class="contentContainer">
+		<div class="SignForContent">
+			<div class="container">
+				<hr style="float:left">
+				<div class="contentSign">
+					<h3 class="contentSignText">POPULAR PRODUCTS</h3>
+				</div>
+				<hr style="float:right">
+			</div>
+		</div>
+		<div class="popularContent">
+			<button></button>
+				<div class="container">
+					<div class="row">
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem1 thumbnail">
+		      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1" onmouseover="changeContent1()">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
+		      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
+		      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
+		      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
+		    				</a>
+		  				</div>
+					</div>
+					<div class="row">
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
+		      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem1 thumbnail" onmouseover="changeContent1()">
+		      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
+		      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
+		    				</a>
+		  				</div>
+		  				<div class="col-xs-6 col-md-3">
+		    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
+		      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
+		    				</a>
+		  				</div>
+					</div>
+				</div>
+			<button></button>
+		</div>
+	</div>
+	<!-- ____________________END CONTENT CONTAINER________________________ -->
+	<!-- ______________________START SIZE TABLE___________________________ -->
+	<div class="sizeTableContainer">
+		<div class="SignForContent">
+			<div class="container">
+				<hr style="float:left">
+				<div class="contentSign">
+					<h3 class="contentSignText">SIZE TABLE</h3>
+				</div>
+				<hr style="float:right">
+			</div>
+			<div id="sizeTableContent"></div>
+		</div>
+	</div>
+	<!-- ________________________END SIZE TABLE___________________________ -->
+	<!-- ______________________START SIGN IN ROW__________________________ -->
+	<div class="SignInSocial">
+		<div class="container">
+			<div class="contentSignIn">
+				<input type="text" placeholder="Enter your e-mail for exclusive offers">
+				<button type="submit" class="SignEmailButton">SUBSCRIBE</button>
+			</div>
+			<div class="socialNetworkLinks">
+				<p>Follow us</p>
+				<img src="">
+				<img src="">
+				<img src="">
+			</div>
+		</div>
+	</div>
+	<!-- _______________________END SIGN IN ROW____________________________ -->
+	<!-- ___________________________START FOOTER___________________________ -->
+	<footer>
+		<div class="container">
+			<ul>CUSTOMER SERVICE
+				<li>Help&contact details</li>
+				<li>Customer FAQ</li>
+				<li>Privacy&cookies policy</li>
+				<li>Size guides</li>
+			</ul>
+			<ul>MY ACCOUNT
+				<li>About us</li>
+				<li>Delivery information</li>
+				<li>Terms&conditions</li>
+				<li>Contact us</li>
+			</ul>
+			<ul>COMPANY INFO
+				<li>About us</li>
+				<li>Terms&conditions</li>
+				<li>Help&contact details</li>
+				<li>Size guides</li>
+			</ul>
+			<ul>CONECT WITH US<br>
+				<li><span class="glyphicon glyphicon-phone-alt"> </span> (+32)539 85 73</li>
+				<li><span class="glyphicon glyphicon-envelope"> </span> some_email@gmail.com</li>
+				<li><span class="glyphicon glyphicon-globe"> </span> somewebadress.com</li>
+			</ul>
+		</div>
+	</footer>		
+	<!-- ____________________________END FOOTER____________________________ -->
+	<script src="js/JQ.js"></script>
+	<script src="js/own_jq.js"></script>
+	<script src="js/own_styles.js"></script>
+	</body>
+</html>

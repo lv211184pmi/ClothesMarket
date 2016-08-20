@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "Satisfy-Regular";
+    src: url("../fonts/Satisfy-Regular.ttf");
+}
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Light.ttf");
+}
+body{
+	font-family: Raleway-Regular;
+}
+.container{
+	width: 1000px;
+}
+/* ------------TOP MENU I STYLES ----------------*/
+#topMenuI{
+	background-color: #d9d9d9;
+	dorder-botton:2px solid #d9d9d9;
+	height: 30px;
+	box-shadow: 5px 0px 4px #808080;
+}
+#topMenu1{
+	display: flex;
+}
+#sloganForTopMenu1{
+	width: 40%;
+}
+#topMenu1 > .TopMenu1Links{
+	width:60%;
+}
+.nav-tabs > li > a{
+	color: #737373;
+	margin: 0;
+} 
+h5{
+	margin: 0;
+}
+#sloganForTopMenu1{
+	padding-top: 9px;
+}
+.TopMenu1Links > ul{
+	width: 100%;
+}
+div.TopMenu1Links > ul.nav.nav-tabs{
+	width: 100%;
+	height: 30px;
+}
+div.TopMenu1Links > ul.nav.nav-tabs >li{
+	width: 25%;
+	border-right: 1px solid #cccccc;
+	height: 30px;
+}
+div.TopMenu1Links > ul.nav.nav-tabs > li > a{
+	padding-top: 5px;
+	text-align: center;
+}
+.nav-tabs > li > a:hover{
+	height: 30px;
+} 
+/* ------------/TOP MENU I STYLES ----------------*/
+/* ------------TOP MENU II STYLES----------------*/
+#topMenuII{
+	height: 160px;
+	background-color: #f1f1f1;
+}
+#topMenu2{
+	display: inline-flex;
+	width: 100%;
+}
+#logoImage{
+	margin-top: 10px;
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin-left: 40px;
+}
+div#leftPartOfTopMenu2 > p{
+	font-size: 22px;
+	font-weight: bold;
+}
+#leftPartOfTopMenu2, #centerPartOfTopMenu2, #rightPartOfTopMemu2{
+	width: 33.33%;
+}
+.mainBasketItemMenu2, .additionalItemsMenu2{
+	height: 50%;
+	width: 100%;
+	padding: auto;
+	display: flex;
+	align-items: center;
+}
+div#centerPartOfTopMenu2 > p{
+	font-family: Satisfy-Regular;
+	color: red;
+	font-size: 20px;
+}
+/* ------------/TOP MENU II STYLES----------------*/
+/* -------------TOP MENU III STYLES----------------*/
+#topMenuIII{
+	height: 50px;
+	background-color: #f1f1f1;
+}
+.navbar.navbar-default{
+	background-color: unset;
+	border: 0px;
+}
+.navbar-default .navbar-nav > li{
+	height: 24px;
+	border-right: 1px solid #cccccc;
+}
+.navbar-default .navbar-nav > li:last-child{
+	border-right: none;
+}
+.navbar-nav > li > a{
+	padding-top: 2px;
+}
+.navbar-nav > li > a:hover{
+	color: red !important;
+}
+.navbar-nav > li{
+	margin-top: 15px;
+}
+#bs-example-navbar-collapse-1{
+	margin: 0px;
+	padding: 0px;
+}
+/* ------------/TOP MENU III STYLES----------------*/
+/* ---------------JUMBOTRON STYLES----------------*/
+.jumbotronModule{
+	height: 350px;
+	background-color: #d9d9d9;
+}
+.jumbotronPicture{
+	height: 100%;
+	width: 40%;
+	overflow: hidden;
+	margin-top: 40px;
+	float: left;
+}
+.jumbotronText{
+	height: 100%;
+	width: 60%;
+	float: right;
+	margin-top: 40px;
+	text-align: center;
+}
+.jumbotronText > p{
+	text-align: center;
+	color: white;
+	text-shadow: 2px 1px #a6a6a6;
+	font-size: 18px;
+}
+.jumbotronText > p:first-child{
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 2px 1px #cccccc;
+}
+.jumbotronText > button{
+	width: 160px;
+	height: 40px;
+	border: 2px solid white;
+	background: linear-gradient(#bfbfbf, #8c8c8c);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	margin:0 auto;
+}
+/* --------------/JUMBOTRON STYLES----------------*/
+/* --------------TOP MENU IV STYLES----------------*/
+
+.topMenuIV{
+	height: 50px;
+	background: linear-gradient(#bfbfbf, #8c8c8c);
+}
+#topMenu4 > .TopMenu1Links > ul{
+	border: none;
+	height: 50px;
+}
+#topMenu4 > .TopMenu1Links > ul:hover{
+	border: none;
+	height: 50px;
+}
+#topMenu4 > .TopMenu1Links > ul > li{
+	border: none;
+	height: 50px;
+}
+#topMenu4 > .TopMenu1Links > .ul > li:hover{
+	background: linear-gradient(#a6a6a6, #808080);
+}
+#topMenu4 > .TopMenu1Links > ul > li a{
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	height: 50px;
+	padding-top: 15px;
+}
+#topMenu4 > .TopMenu1Links > ul > li a:hover{
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
+	height: 48px;
+	background: linear-gradient(#a6a6a6, #808080);
+	border: none;
+	border-top: 2px solid red;
+	border-radius: 0;
+}
+/* -------------/TOP MENU IV STYLES---------------*/
+/* -----------CONTENT CONTAINER STYLES------------*/
+.popularContent > .container > .row > .col-xs-6.col-md-3 > a{
+	border: none;
+	margin: 2px;
+	padding: 0px;
+}
+.contentSign > h3{
+	color: #595959;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+hr{
+	margin-top: 30px;
+	size: 2px;
+	width: 35%;
+}
+.contentSign{
+	float:left;
+	align:center;
+	width:30%;
+}
+.contentSignText{
+	text-align:center;
+}
+/* ----------/CONTENT CONTAINER STYLES-----------*/
+/* --------------SIGN IN ROW STYLES--------------*/
+.SignInSocial{
+	background: #595959;
+	height: 50px;
+	margin-top: 10px;
+}
+.contentSignIn{
+	display: flex;
+	padding-top: 10px;
+	float: left;
+	width: 60%;
+}
+.contentSignIn > input {
+	border-radius: 0;
+	margin-right: 20px;
+	border: 1px solid #4d4d4d;
+	background: #333333;
+	color: white;
+	font-family: Satisfy-Regular;
+	width: 250px;
+	height: 30px;
+	padding-left: 10px;
+}
+.contentSignIn > buton {
+	border-radius: 0px;
+}
+.socialNetworkLinks{
+	width: 40%;
+	float: right;
+	display: flex;
+	align-content: right;
+}
+.socialNetworkLinks > p{
+	font-family: Satisfy-Regular;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+.socialNetworkLinks > img{
+	height: 40px;
+	padding: 3px 10px;
+}
+/* -------------/SIGN IN ROW STYLES--------------*/
+/* ----------------FOOTER STYLES-----------------*/
+footer{
+	background: #262626;
+}
+footer > .container{
+	position: relative;
+	display: flex;
+}
+footer > .container > ul{
+	margin-top: 10px;
+	color: white;
+	list-style-type: none;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer > .container > ul >li{
+	font-size: 10px;
+	margin-top: 8px;
+	font-weight: normal;
+}
+
+/* ---------------/FOOTER STYLES-----------------*/
