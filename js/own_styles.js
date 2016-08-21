@@ -1,27 +1,6 @@
 //REGISTRATION PART WITH COOKIES
 
 //TABLE SIZE LOADING & PARSING
-var requestTable = new XMLHttpRequest();
-requestTable.onreadystatechange = function(){
-  if (requestTable.readyState == 4 && requestTable.status == 200){
-    parsingTableJSON(requestTable.responseText);
-  } 
-}
-requestTable.open('GET', 'size_table.json', true);
-requestTable.send();
-
-function parsingTableJSON(response) {
-  var sizeTable = JSON.parse(response);
-  var i;
-  var out = "<table>"
-  for (i = 0; i <= sizeTable.length; i++) {
-    out += "<tr><td>" + sizeTable[i].country +
-    "</td><td>" +  sizeTable[i].size +
-    "</td></tr>";
-  } 
-  out += "</table>";
-  document.getElementById("sizeTableContent").innerHTML = out;
-}
 
 
 // make top carousele play styles
