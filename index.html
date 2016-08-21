@@ -24,8 +24,8 @@
 						<ul class="nav nav-tabs">
 							<li>
 							<form name="registrationForm">
-								<input type="text" name="userLogin" placeholder="Enter your login" class="userValidation">
-								<input type="password" name="userPassword" placeholder="Enter your password" class="userValidation">
+								<input type="text" name="userLogin" placeholder="Enter your login" class="userValidation" id="loginUser">
+								<input type="password" name="userPassword" placeholder="Enter your password" class="userValidation" id="passwordUser">
 								<button class="userValidation" onclick="checkCookies()"><span class="glyphicon glyphicon-flag" style="color: red">LogIn</span></button>
 							</form>
 						</ul>
@@ -35,7 +35,7 @@
 							<li><a href="#"><span class="glyphicon glyphicon-user"></span> My account</a></li>
 							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> My wishlist</a></li>
 							<li><a href="#"><span class="glyphicon glyphicon-trash"></span> Basket</a></li>
-							<li><a href="#"><span class="glyphicon glyphicon-flag"></span> LogIn</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-flag"></span> Wellcome Admin</a></li>
 						</ul>
 					</div>
 				</div>
@@ -147,54 +147,55 @@
 			</div>
 		</div>
 		<div class="popularContent">
-			<button></button>
-				<div class="container">
-					<div class="row">
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem1 thumbnail">
-		      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1" onmouseover="changeContent1()">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
-		      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
-		      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
-		      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
-		    				</a>
-		  				</div>
-					</div>
-					<div class="row">
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
-		      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem1 thumbnail" onmouseover="changeContent1()">
-		      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
-		      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
-		    				</a>
-		  				</div>
-		  				<div class="col-xs-6 col-md-3">
-		    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
-		      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
-		    				</a>
-		  				</div>
-					</div>
+			<div class="container">
+				<div class="row">
+					<div id="contentRow">
+				<!--
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem1 thumbnail">
+	      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1" onmouseover="changeContent1()">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
+	      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
+	      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
+	      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
+	    				</a>
+	  				</div>
 				</div>
-			<button></button>
+				<div class="row contentRow">
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
+	      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem1 thumbnail" onmouseover="changeContent1()">
+	      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
+	      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
+	    				</a>
+	  				</div>
+	  				<div class="col-xs-6 col-md-3">
+	    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
+	      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
+	    				</a>
+	  				</div>   -->
+	  				</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- ____________________END CONTENT CONTAINER________________________ -->
@@ -259,6 +260,7 @@
 	<!-- ____________________________END FOOTER____________________________ -->
 	<script src="js/JQ.js"></script>
 	<script src="js/own_jq.js"></script>
+	<script src="js/requests.js"></script>
 	<script src="js/own_styles.js"></script>
 	</body>
 </html>

@@ -1,15 +1,10 @@
-{
-	"content_item1": "images/gallery/1-1.png",
-	"content_item1": "images/gallery/2-1.png",
-	"content_item1": "images/gallery/3-1.png",
-	"content_item1": "images/gallery/4-1.png";
-	"content_item1": "images/gallery/5-1.png";
-	"content_item1": "images/gallery/6-1.png";
-	"content_item1": "images/gallery/7-1.png";
-	"content_item1": "images/gallery/8-1.png";
-	"content_item1": "images/gallery/1-1.png";
-	"content_item1": "images/gallery/2-1.png";
-	"content_item1": "images/gallery/3-1.png";
-	"content_item1": "images/gallery/4-1.png";
-	"content_item1": "images/gallery/5-1.png";
-}
+"images_array" : [
+	{"path" : "images/gallery/1-1.png", "name" : "First shirt"},
+	{"path" : "images/gallery/2-1.png", "name" : "Second shirt"},
+	{"path" : "images/gallery/3-1.png", "name" : "Third shirt"},
+	{"path" : "images/gallery/4-1.png", "name" : "Fourth shirt"},
+	{"path" : "images/gallery/3-1.png", "name" : "Fifth shirt"},
+	{"path" : "images/gallery/2-1.png", "name" : "Sixth shirt"},
+	{"path" : "images/gallery/1-1.png", "name" : "Seventh shirt"},
+	{"path" : "images/gallery/4-1.png", "name" : "Eighth shirt"}
+]
