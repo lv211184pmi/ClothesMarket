@@ -11,6 +11,21 @@
 		<![endif]-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/switcher.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize() {
+				var mapProp = {
+    			center:new google.maps.LatLng(51.508742,-0.120850),
+    			zoom:5,
+    			mapTypeId:google.maps.MapTypeId.ROADMAP
+			};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+</head>
 	</head>
 	<body>
 	<!-- ______________________START TOP MENU I_____________________________ -->
@@ -20,17 +35,16 @@
 					<div id="sloganForTopMenu1">
 						<h5>EASY BUY & LOOK WELL</h5>
 					</div>
-					<div class="TopMenu1LinksUnregistered">
+					<div id ="TopMenu1LinksUnregistered">
 						<ul class="nav nav-tabs">
 							<li>
-							<form name="registrationForm">
 								<input type="text" name="userLogin" placeholder="Enter your login" class="userValidation" id="loginUser">
 								<input type="password" name="userPassword" placeholder="Enter your password" class="userValidation" id="passwordUser">
 								<button class="userValidation" onclick="checkCookies()"><span class="glyphicon glyphicon-flag" style="color: red">LogIn</span></button>
-							</form>
+							</li>
 						</ul>
 					</div>
-					<div class="TopMenu1LinksRegistered" style="display: none">
+					<div id ="TopMenu1LinksRegistered" style="display: none">
 						<ul class="nav nav-tabs">
 							<li><a href="#"><span class="glyphicon glyphicon-user"></span> My account</a></li>
 							<li><a href="#"><span class="glyphicon glyphicon-heart"></span> My wishlist</a></li>
@@ -90,8 +104,8 @@
 				        <li><a href="#">SHOP</a></li>
 				        <li><a href="#">ABOUT US</a></li>
 				        <li><a href="#">TESTIMONIALS</a></li>
-				        <li><a href="#">CONTAKT US</a></li>
-				        <li><a href="#">LIFE MADE EASY!</a></li>
+				        <li><a href="#sizeTableContainer">SIZE TABLE</a></li>
+				        <li><a href="#contactUsForm">CONTAKT US</a></li>
 				      </ul>
 				      <form class="navbar-form navbar-left">
 				        <div class="form-group">
@@ -123,14 +137,16 @@
 	<div class="topMenuIV">
 		<div class="container">
 			<div id="topMenu4">
-				<div class="TopMenu1Links">
+				<div class="TopMenu1Links" style="position:absolute">
 					<ul class="nav nav-tabs">
-						<li role="presentation"><a href="#">FASHION COLLECTION 2015</a></li>
-						<li role="presentation"><a href="#">TOP SELLERS</a></li>
-						<li role="presentation"><a href="#">NEW TREND 2016</a></li>
-						<li role="presentation"><a href="#">HOT OF TODAY</a></li>
+						<li role="presentation"><a>FASHION COLLECTION SUMMER 2016</a></li>
+						<li role="presentation"><a>FASHION COLLECTION AUTUMN 2016</a></li>
+						<li role="presentation"><a>HOT SALE</a></li>
 					</ul>
 				</div>
+			</div>
+			<div>
+				<img src="images/sale.png" style="position:relative; margin-right:0"></img>
 			</div>
 		</div>
 	</div>
@@ -150,49 +166,11 @@
 			<div class="container">
 				<div class="row">
 					<div id="contentRow">
-				<!--
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem1 thumbnail">
-	      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1" onmouseover="changeContent1()">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
-	      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
-	      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
-	      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
-	    				</a>
-	  				</div>
-				</div>
-				<div class="row contentRow">
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem3 thumbnail" onmouseover="changeContent3()">
-	      					<img src="images/gallery/3-1.png" alt="coat" class="contentImage3">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem1 thumbnail" onmouseover="changeContent1()">
-	      					<img src="images/gallery/1-1.png" alt="shirt" class="contentImage1">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem4 thumbnail" onmouseover="changeContent4()">
-	      					<img src="images/gallery/4-1.png" alt="jacket" class="contentImage4">
-	    				</a>
-	  				</div>
-	  				<div class="col-xs-6 col-md-3">
-	    				<a href="#" class="cotentItem2 thumbnail" onmouseover="changeContent2()">
-	      					<img src="images/gallery/2-1.png" alt="cloth" class="contentImage2">
-	    				</a>
-	  				</div>   -->
+						<div class="col-xs-6 col-md-3">
+	    					<a href="#" class="cotentItem1 thumbnail">
+	      						<img id="imgContent">
+	    					</a>
+	  					</div>
 	  				</div>
 				</div>
 			</div>
@@ -200,9 +178,9 @@
 	</div>
 	<!-- ____________________END CONTENT CONTAINER________________________ -->
 	<!-- ______________________START SIZE TABLE___________________________ -->
-	<div class="sizeTableContainer">
-		<div class="SignForContent">
-			<div class="container">
+	<div id="sizeTableContainer">
+		<div class="container">
+			<div class="SignForContent">
 				<hr style="float:left">
 				<div class="contentSign">
 					<h3 class="contentSignText">SIZE TABLE</h3>
@@ -211,8 +189,48 @@
 			</div>
 			<div id="sizeTableContent"></div>
 		</div>
-	</div>
+	</div><br />
 	<!-- ________________________END SIZE TABLE___________________________ -->
+	<!-- ______________________sTART CONTACT BLOCK________________________ -->
+	<div id="contactInformationContainer">
+		<div class="container">
+			<div class="SignForContent">
+				<hr style="float:left">
+				<div class="contentSign">
+					<h3 class="contentSignText">FEEL FREE TO CONTACT US</h3>
+				</div>
+				<hr style="float:right">
+			</div>
+			<div id="contactUsForm">
+				<div class="userDataSide">
+					<input type="text" name="userName" placeholder="enter your name"/>
+					<input type="mail" name="userEmail" placeholder="enter your email"/>
+					<textarea name="userComment" placeholder="Your comment"></textarea>
+					<div class="onoffswitch">
+    					<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+    					<label class="onoffswitch-label" for="myonoffswitch">Choose collection:
+        					<div class="onoffswitch-inner"></div>
+       						<div class="onoffswitch-switch"></div>
+    					</label>
+					</div>
+					<input id="checkboxEmail" type="checkbox" name="Data2" value="option1" />
+  					<label for="checkboxEmail"><span style="font-size: 10px">
+  						I agree to receive news and event info by e-mail</span></label>
+  					<button id="submitButton">SEND</button>
+				</div>
+				<div class="companyDataSide">
+					<div id="googleMap" style="width:90%;height:300px;"></div>
+					<div id="contacts">
+						<p><span style="font-weight: bold">MEN WEAR SHOP</span> Kozelnytska str, Lviv, Ukraine</p>
+						<p><span class="glyphicon glyphicon-phone-alt"></span> (+32)539 85 73 </p>
+						<p><span class="glyphicon glyphicon-envelope"> </span> some_email@gmail.com</p>
+						<p><span class="glyphicon glyphicon-globe"> </span> somewebadress.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ______________________END CONTACT BLOCK__________________________ -->
 	<!-- ______________________START SIGN IN ROW__________________________ -->
 	<div class="SignInSocial">
 		<div class="container">

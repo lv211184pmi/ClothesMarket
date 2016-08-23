@@ -1,13 +1,12 @@
 // REGISTRATION 
-
 function checkCookies() {
   var requestLogin = new XMLHttpRequest();
-  requestLogin.onreadystatechange = function(){
+  requestLogin.onreadystatechange = function() {
     if (requestLogin.readyState == 4 && requestLogin.status == 200) {
-      parsingLoginJSON(requestLogin.responseText)
+       parsingLoginJSON(requestLogin.responseText);
     }
-  }
-  requestLogin.open('GET', 'login.json', true);
+  };
+  requestLogin.open("GET", "js/login.json", true);
   requestLogin.send();
 }
 function parsingLoginJSON(response) {
@@ -15,10 +14,11 @@ function parsingLoginJSON(response) {
   var passwordUser = document.getElementById('passwordUser').value;
   var userData = JSON.parse(response);
   if (loginUser == userData.username &&  passwordUser == userData.password){
-    document.getElementsByClassName('TopMenu1LinksRegistered').style.visibility = "visible";
-    document.getElementsByClassName('TopMenu1LinksUnregistered').style.visibility = "hidden";
+    document.getElementById('TopMenu1LinksRegistered').style.display = "flex";
+    document.getElementById('TopMenu1LinksUnregistered').style.display = "none";
+    document.cookie = "username: admin; userpassword: admin";
   } else {
-    loginUser.innerHTML = "enter valid login";
+    document.getElementById('loginUser').placeholder.innerHTML = 'no valid user';
   }
 }
 
@@ -29,16 +29,16 @@ requestContent.onreadystatechange = function(){
     parsingContentJSON(requestContent.responseText);
   }
 }
-requestContent.open('GET', 'content.json', true);
+requestContent.open('GET', 'js/content.json', true);
 requestContent.send();
 function parsingContentJSON(response) {
-  var i;
   var contentArray = JSON.parse(response);
-  for (i = 0; i < contentArray.length; i++) {
-    var out_content = "<div class='col-xs-6 col-md-3'><a href='#' class='cotentItem1 thumbnail'><img src='";
-    out_content += contentArray.images_array.path[i] + "'></a></div>";
+  var i;
+  for (i=0; i < contentArray.length; i++) {
+    var aAttribute = "<a href='#' class='cotentItem1 thumbnail'>";
+    aAttribute += "<img src='" + contentArray[i].path + "' class='contentImage1'>";
   }
-  document.getElementById('contentRow').innerHTML = out_content;
+  document.getElementById('imgContent').innerHTML = aAttribute;
 }
 
 //  TABLE SIZE REQUEST
@@ -48,12 +48,12 @@ requestTable.onreadystatechange = function(){
     parsingTableJSON(requestTable.responseText);
   } 
 }
-requestTable.open('GET', 'size_table.json', true);
+requestTable.open('GET', 'js/size_table.json', true);
 requestTable.send();
 function parsingTableJSON(response) {
   var sizeTable = JSON.parse(response);
-  var i;
-  var out = "<table>"
+  var i, j;
+  var out = "<table class='tableSize'>"
   for (i = 0; i < sizeTable.length; i++) {
     out += "<tr><td>" + sizeTable[i].country;
     var y = sizeTable[i].size;

@@ -82,3 +82,4 @@ function changePage(page){
 function numPages(){
   return Math.ceil(arr_main.length / records_per_page);
 }
+

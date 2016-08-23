@@ -57,6 +57,7 @@ div.TopMenu1Links > ul.nav.nav-tabs > li > a{
 .nav-tabs > li > a:hover{
 	height: 30px;
 } 
+
 /* ------------/TOP MENU I STYLES ----------------*/
 /* ------------TOP MENU II STYLES----------------*/
 #topMenuII{
@@ -74,7 +75,7 @@ div.TopMenu1Links > ul.nav.nav-tabs > li > a{
 	overflow: hidden;
 	margin-left: 40px;
 }
-div#leftPartOfTopMenu2 > p{
+#leftPartOfTopMenu2 > p{
 	font-size: 22px;
 	font-weight: bold;
 }
@@ -88,7 +89,7 @@ div#leftPartOfTopMenu2 > p{
 	display: flex;
 	align-items: center;
 }
-div#centerPartOfTopMenu2 > p{
+#centerPartOfTopMenu2 > p{
 	font-family: Satisfy-Regular;
 	color: red;
 	font-size: 20px;
@@ -174,14 +175,17 @@ div#centerPartOfTopMenu2 > p{
 #topMenu4 > .TopMenu1Links > ul{
 	border: none;
 	height: 50px;
+	width: 100%;
 }
 #topMenu4 > .TopMenu1Links > ul:hover{
 	border: none;
 	height: 50px;
+	width: 100%;
 }
 #topMenu4 > .TopMenu1Links > ul > li{
 	border: none;
 	height: 50px;
+	width: 33.33%;
 }
 #topMenu4 > .TopMenu1Links > .ul > li:hover{
 	background: linear-gradient(#a6a6a6, #808080);
@@ -211,15 +215,15 @@ div#centerPartOfTopMenu2 > p{
 	padding: 0px;
 }
 .contentSign > h3{
-	color: #595959;
+	color: #8c8c8c;
 	font-weight: bold;
 	font-size: 18px;
 }
-
 hr{
 	margin-top: 30px;
 	size: 2px;
 	width: 35%;
+	border-color: #8c8c8c;
 }
 .contentSign{
 	float:left;
@@ -230,11 +234,82 @@ hr{
 	text-align:center;
 }
 /* ----------/CONTENT CONTAINER STYLES-----------*/
+/* ---------------TABLE SIZE STYLES--------------*/
+.tableSize{
+	width: 80%;
+	height: 120px;
+	margin-left: 10%; 
+}
+tr:first-child > td{
+	border-top: none;
+}
+tr:last-child > td{
+	border-bottom: none;
+}
+tr:nth-child(even){
+	background-color: #f1f1f1;
+}
+td{
+	border:1px solid #bfbfbf;
+	border-left: none;
+	text-align: center;
+}
+tr > td:last-child{
+	border-right: none;
+}
+/* --------------/TABLE SIZE STYLES--------------*/
+/* ------------CONTACT CONTAINER STYLES----------*/
+#contactInformationContainer{
+	background: linear-gradient(white, #8c8c8c);
+	display: flex;
+}
+#contactUsForm{
+	display: flex;
+	width: 100%;
+	height: 420px;
+}
+.userDataSide, .companyDataSide{
+	width: 50%;
+	height: 100%;
+}
+.userDataSide > input{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+textarea{
+	height: 150px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+#checkboxEmail{
+	margin-left: 5%;
+	width: 20px;
+}
+#submitButton{
+	height: 50px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 2px solid white;
+	background: linear-gradient(#bfbfbf, #8c8c8c);
+	color: white;
+	font-weight: bold;
+}
+#contacts{
+	margin-left: 5%;
+}
+#contacts > p{
+	margin-top: 3px;
+}
+/* -----------/CONTACT CONTAINER STYLES----------*/
 /* --------------SIGN IN ROW STYLES--------------*/
 .SignInSocial{
-	background: #595959;
+	background: linear-gradient(#8c8c8c, #262626);
 	height: 50px;
-	margin-top: 10px;
 }
 .contentSignIn{
 	display: flex;

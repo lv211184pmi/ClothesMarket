@@ -1,0 +1,68 @@
+.onoffswitch {
+  width: 89%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 10px auto;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.onoffswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -moz-transition: margin 0.5s ease-in 0s;
+  -webkit-transition: margin 0.5s ease-in 0s;
+  -o-transition: margin 0.5s ease-in 0s;
+  transition: margin 0.5s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 16px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 15px 0px rgba(0,0,0,0.08) inset;
+}
+
+.onoffswitch-inner:before {
+  content: "PREVIOUS COLLECTION";
+  padding-left: 15px;
+  background-color: #8c8c8c;
+  color: #FFFFFF;
+  border-radius: 10px 0 0 10px;
+}
+
+.onoffswitch-inner:after {
+  content: "NEW COLLECTION";
+  padding-right: 15px;
+  background-color: #FFFFFF;
+  color: #666666;
+  text-align: right;
+  border-radius: 0 30px 30px 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
